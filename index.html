@@ -1,57 +1,40 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Google</title>
-        <meta charset="UTF-8">
-        <link href="style.css" type="text/css" rel="stylesheet">
-        <link href="reset.css" type="text/css" rel="stylesheet"> <!-- link to reset styles and start with a blank canvas-->
-    </head>
-
-    <body>
-        <div id="top">
-            <ul class="bar">
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><a href="#"><img src="images/apps.svg" alt="google apps"></a></li>
-                <li><a href="#"><img src="images/notifications.png" alt="google notifications"></a></li>
-                <li><a href="#"><img src="images/colcodeando.jpeg" alt="colcodeando"></a></li>
-            </ul>
-        </div>
-
-        <div id="image">
-            <img src="images/google.png" alt="google logo">
-        </div>
-
-        <div id="search-bar">
-            <form action="#" method="GET" name="search">
-                <input type="text" name="search">
-            </form>
-        </div>
-
-        <div id="buttons">
-            <form action="#" method="GET" name="buttons">
-                <input type="submit" name="button1" value="Google Search">
-                <input type="submit" name="button2" value="I'm feeling Lucky">
-            </form>
-
-            <img src="images/mic.png" alt="search by voice">
-        </div>
-        
-        <div>
-            <ul class="bar left">
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-
-            <ul class="bar right">
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-        </div>
-        
-        
-    </body>
-</html>
+	<head>
+		<meta charset="UTF-8"> <!-- should be placed to display all chracters-->
+		<title>Google</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link type="text/css" rel="stylesheet" href="reset.css"><!--good thing to have to style the way you want to, I googled this-->
+	</head>
+	<body>
+		<div class="header">
+			<div id="gmail"><a href="http://www.google.com" class="hco">Gmail</a></div>
+			<div id="images"><a href="http://www.google.com" class="hco">Images</a></div>
+			<div id="apps"><a href="http://www.google.com"><img src="images/apps.svg" height="25" width="25" alt="google aps"></a></div>
+			<div id="bell"><a href="http://www.google.com"><img src="images/notifications.png" height="25" width="25" alt="notifications"></a></div>
+			<div id="pic"><a href="http://www.google.com"><img id="jorge" src="images/colcodeando.jpeg" height="30" width="30" alt="colcodeando"></a></div><!-- is a good practice to set an alt text for the images-->
+		</div>
+		<div class="image"><a href="http://www.google.com"><img src="images/google.png" height="100" width="300" alt="Google"></a></div>
+		<div class="search">
+			<div id="border"></div>
+			<div id="mic"><a href="http://www.google.com"><img src="images/mic.png" height="22" width="22" alt="mic"></a></div>
+			<div id="bar">
+				<form action="#" method="GET"><!--will be covered later in the course-->
+				<input type="text" name="search" maxlength="2048" size="49" placeholder="Search Google or enter URL"><!--placeholder creates the disspearing text--> 
+				</form>
+			</div>		
+		</div>
+		<div class="buttons">
+			<a href="http://www.google.com"><div id="google">Google Search</div></a>
+			<a href="http://www.google.com"><div id="lucky">I'm Feeling Lucky</div></a>
+		</div>
+		<div class="footer">
+			<div id="ads"><a href="http://www.google.com">Advertising</a></div>
+			<div id="bus"><a href="http://www.google.com">Business</a></div>
+			<div id="abt"><a href="http://www.google.com">About</a></div>
+			<div id="pri"><a href="http://www.google.com">Privacy</a></div>
+			<div id="trm"><a href="http://www.google.com">Terms</a></div>
+			<div id="sts"><a href="http://www.google.com">Settings</a></div>
+		</div>
+	</body>	
+</html>	
