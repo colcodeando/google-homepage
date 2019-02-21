@@ -4,7 +4,7 @@ body {
 .header {
 	height: 40px; 
 	position: relative; /* so I can move the other divs relative to this*/
-	/*border: 1px solid black; makes positioning WAAAAY easier*/
+	/*border: 1px solid black; makes positioning easier*/
 	font-family: arial, sans-serif;
 	font-size: 13px;
 }
